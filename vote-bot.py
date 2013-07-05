@@ -21,6 +21,9 @@ def main():
 	readconf(doms,'doms.txt')
 	email = choice(firstnames) + choice(conchar) + choice(surnames) + '@' + choice(doms)
 	print email
+	# if run hourly comment the following two lines out to make it more real.
+	#waittime = randint(0,3600)
+        #time.sleep(waittime)
 	myCookie = urllib2.HTTPCookieProcessor(cookielib.CookieJar())
 	openner = urllib2.build_opener(myCookie)
 	# this should be the <input name='vote[email]'> in the page
