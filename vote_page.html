@@ -1,0 +1,686 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+
+<head id="www-sitename-com" data-template-set="html5-reset-wordpress-theme">
+
+	<meta charset="UTF-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<!--[if IE ]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![endif]-->
+
+	
+	<title>Cenovis | Get on with the good stuff!</title>
+
+	<meta name="title" content="Cenovis | Get on with the good stuff!">
+
+	<meta name="Copyright" content="Copyright &copy; Cenovis 2013. All Rights Reserved.">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->	
+	
+	
+	<!-- concatenate and minify for production -->
+	<link rel="stylesheet" href="http://www.cenovis.com.au/wp-content/themes/cenovis2013/reset.css?096e1940eeac2c7d1555a9e708f06e1c" />
+	<link rel="stylesheet" href="http://www.cenovis.com.au/wp-content/themes/cenovis2013/style.css?f5b01fdb8d6d1448e068c63665a4217c" />
+	
+	<script src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/_/js/jquery-1.9.1.min.js"></script>
+	<script src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/js/jquery.cycle2.js"></script>
+	<script src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/js/jquery.cycle2.center.min.js"></script> 
+	<script src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/js/jquery.cycle2.carousel.min.js"></script>
+	<script src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/_/js/modernizr-2.6.2.dev.js"></script>
+	
+	<!-- Application-specific meta tags -->
+
+
+  
+<meta property="fb:app_id" content="445745688845409" /> 
+<meta property="og:url"    content="http://www.cenovis.com.au/win-the-goods-entry/vote/115" /> 
+<meta property="og:title"  content="Cenovis Win the Goods Competition - Ingle Farm Junior Soccer Club"  /> 
+<meta property="og:image"  content="/win-the-goods-entry/uploads/detail/85d9cc1c69b50a41d72e615cce512d3b.jpg" /> 
+<meta property="og:description"  content="Win $5000 for your local sporting organisation." /> 
+
+	
+	
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://www.cenovis.com.au/xmlrpc.php" />
+
+	<meta name='robots' content='noindex,nofollow' />
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.4.7 - http://yoast.com/wordpress/seo/ -->
+<link rel="canonical" href="http://www.cenovis.com.au/" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.3 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-11204202-1']);
+				            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			<meta name="generator" content="WordPress 3.5.1" />
+
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+		// homepage slideshow
+
+		$('#HPSlideshow').cycle({
+			slides: '.slide',
+			next: '#nextTop',
+			prev: '#prevTop',
+			pager: '.pager',
+			fx: 'scrollHorz',
+			centerHorz: true
+		});
+
+		$('#productTiles').cycle({
+			slides:'.tile',
+			fx:'carousel',
+			prev:'#prev',
+			next:'#next',
+			carouselFluid:true,
+			carouselVisible:'5'//,
+			//progressive:".tile"
+		});
+
+		$('#nav').mouseleave(function(){
+			$('.submenu').hide();
+		});
+		$('.drop-down').mouseenter(function(){
+			$('.submenu').stop().animate({'opacity':'0'}, 'fast').hide();
+			$(this).next().stop().animate({'opacity':'1'}, 'fast').show().mouseleave(function(){
+				$(this).hide();
+			});
+		});
+		
+		// with no animation
+		// $('#nav').mouseleave(function(){
+		// 	$('.submenu').hide();
+		// });
+		// $('.drop-down').mouseenter(function(){
+		// 	$('.submenu').hide();
+		// 	$(this).next().show().mouseleave(function(){
+		// 		$(this).hide();
+		// 	});
+		// });
+
+	if( $('.load-features').length > 0 ) {
+		// load in features partial
+		var target = $("#slideshow").offset().top;
+		var interval = setInterval(function() {
+		    if ($(window).scrollTop() >= target) {
+		    	$('.load-features-container').show();
+				setTimeout(callLoad, 1500);
+				function callLoad() {
+					$('.load-features').load('/ajax-features/' );
+				}
+		        clearInterval(interval);
+		    }
+		}, 250);
+	}
+
+	$('#product iframe').wrap('<div id="tvc" />');
+	$('#product img:first').wrap('<div class="mainProdImg" />');
+	$('#product .mainProdImg').nextUntil('#lower').wrapAll('<div class="copyBlock" />');
+	$('.nolink').click(function() {
+		return false;
+	});
+
+
+	// footer conversion slide 
+	function slide(){
+	$('#footerConv').animate({"right":"0px"}, 500);
+	}
+	setTimeout(slide, 200000);
+
+	
+	$('#close span').click(function(){
+		$('#footerConv').animate({"right":"-330px"},200);
+	});	
+
+	function slideThin(){
+	$('#footerConvThin').animate({"right":"0px"}, 500);
+	}
+	setTimeout(slideThin, 25000);
+
+	
+	$('#close span').click(function(){
+		$('#footerConvThin').animate({"right":"-145px"},200);
+	});	
+// end footer conversion slide
+
+})
+
+</script>
+
+<!--[if IE ]>
+	<style>
+		#HPSlideshow .slide div {
+			display: none;
+		}
+		#HPSlideshow .slide div.ie8 {
+			display: block;
+		}
+
+	</style>
+<![endif]-->
+
+<!--[if IE 8 ]>
+	<style>
+.ginterest .post-text-container {
+	padding: 5px 10px 2px 10px;
+}
+.ginterest .content article {
+	border: 1px solid #c0c2bf;
+}
+img {
+	max-width: none;
+}		
+		.category-arthritis-bones-muscles .catWrap{
+			background-color:#DA6F6D !important;
+		}
+		.category-fish-oils .catWrap{
+			background-color:#3E687C !important;
+		}
+		.category-kids-health .catWrap{
+			background-color:#69B0C5 !important;
+		}
+		.category-stress-and-sleep .catWrap{
+			background-color:#7868A0 !important;
+		}
+		.category-digestive-balance-and-detox .catWrap{
+			background-color:#7D9E5A !important;
+		}
+		.category-heart-and-circulation .catWrap{
+			background-color:#CC4A44 !important;
+		}
+		.category-mens-health .catWrap{
+			background-color:#3D697A !important;
+		}
+		.category-womens-health .catWrap{
+			background-color:#E695B3 !important;
+		}
+		.category-energy-and-vitality .catWrap{
+			background-color:#B1A45C !important;
+		}
+		.category-colds-immunity-hayfever .catWrap{
+			background-color:#D6926E !important;
+		}
+		.category-multivitamins .catWrap{
+			background-color:#B98AC5 !important;
+		}
+
+		#nav .good-stuff-guide .submenu {
+			height: 500px;
+		}
+
+		#lastContent ul li{
+			margin-right:1%;
+		}
+	</style>
+<![endif]-->
+</head>
+
+
+<body class="home blog page">
+		<header id="header" role="header">
+			<div class="wrapper">
+				<a href="/" title="cenovis.com.au" rel="home"><img class="logo" src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/logo.png"></a>
+				<form action="http://www.cenovis.com.au" id="searchform" method="get">
+    <div>
+        <img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/searchLeaf.png">
+        <input type="search" id="s" name="s" value="" placeholder="Search..." style="border:none, outline:none;"/>
+        
+        <input type="submit" value="" id="searchsubmit" />
+    </div>
+</form>			</div>
+		</header>
+
+			<div id="mobileNav">
+			 <ul>
+			 	<li><a href="/guide">The Goodstuff Guide</a></li>
+			 	<li><a href="/products">Our Products</a></li>
+			 </ul>
+		</div>
+	
+		<nav id="nav" role="navigation">
+			
+			<div class="wrapper">
+				<ul class="good-stuff-guide">
+					<li class="drop-down">
+						<a href="/guide/">The Goodstuff Guide</a>
+						<div class="current-page-indicator-off"></div>
+					</li>	
+
+
+					<li class=" submenu">
+						<img class="arrow-up" src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/arrowUp.png">
+						<p>Read all about the good stuff in our good stuff guide!</p>
+						<ul class="row">
+							<li>
+								<a href="/guide/lifestyle">
+									<div ><img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/menu-guide-lifestyle.jpg">
+								</a>
+							</li>
+							<li>
+								<a href="/guide/entertainment">
+									<div ><img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/menu-guide-entertainment.jpg">
+								</a>
+							</li>
+							<li>
+								<a href="/guide/health">
+									<div ><img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/menu-guide-health.jpg">
+								</a>
+							</li>
+							<li>
+								<a href="/guide/family">
+									<div ><img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/menu-guide-family.jpg">
+								</a>
+							</li>
+
+						</ul>
+						<div class="latest">
+							<h2>Latest articles</h2>
+								<ul>
+								 
+									<li>
+							          <a href="http://www.cenovis.com.au/six-slow-cooker-recipes-guaranteed-to-please/">Six slow cooker recipes guaranteed to please</a>
+							        </li>								
+								 
+									<li>
+							          <a href="http://www.cenovis.com.au/how-echinacea-can-help-you-save-money-this-cold-and-flu-season/">How echinacea can help you save money this cold and flu season</a>
+							        </li>								
+								 
+									<li>
+							          <a href="http://www.cenovis.com.au/how-to-bring-the-outdoors-in-to-your-small-living-space/">How to bring the outdoors in to your small living space</a>
+							        </li>								
+								 
+									<li>
+							          <a href="http://www.cenovis.com.au/getting-picky-eaters-to-eat-well/">Getting picky eaters to eat well</a>
+							        </li>								
+								 
+									<li>
+							          <a href="http://www.cenovis.com.au/10-time-saving-tips-for-busy-women/">10 time saving tips for busy women</a>
+							        </li>								
+								 
+									<li>
+							          <a href="http://www.cenovis.com.au/10-family-friendly-activities-to-get-the-heart-racing/">10 family friendly activities to get the heart racing!</a>
+							        </li>								
+															</ul>
+							</div>
+
+						<div class="clear"></div>
+						
+					</li><!-- .submenu -->
+				</ul>
+
+
+				<ul class="  our-products">
+					<li class="drop-down">
+						<a href="/products/">Our Products</a>
+						<div class="current-page-indicator-off"></div>
+					</li>
+					
+					<li class="submenu">	
+						<img class="arrow-up" src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/arrowUp.png">
+						<ul class="top-row row">
+							<li>
+								<a href="/products/kids-health/">
+									<h2 class="kids">KID'S HEALTH</h2>
+									<img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/menu-products-kids.jpg" width="99" height="176">
+								</a>
+							</li>
+							<li>
+								<a href="/products/multivitamins">
+									<h2 class="multis">MULTI-VITAMINS</h2>
+									<img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/menu-products-multis.jpg" width="99" height="176">
+								</a>
+							</li>
+							<li>
+								<a href="/products/colds-immunity-hayfever/">
+									<h2 class="immunity">IMMUNITY</h2>
+									<img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/menu-products-immunity.jpg" width="92" height="176">
+								</a>
+							</li>
+						</ul><!-- .row -->
+						<div class="clear"></div>
+						<div class="row our-product-range">
+							<h2>OUR PRODUCT RANGE</h2>
+							<ul>
+									<li class="cat-item cat-item-117"><a href="http://www.cenovis.com.au/products/arthritis-bones-muscles/" title="View all posts filed under Arthritis, bones and muscles">Arthritis, bones and muscles</a>
+</li>
+	<li class="cat-item cat-item-118"><a href="http://www.cenovis.com.au/products/digestive-balance-and-detox/" title="View all posts filed under Digestive balance and detox">Digestive balance and detox</a>
+</li>
+	<li class="cat-item cat-item-127"><a href="http://www.cenovis.com.au/products/energy-and-vitality/" title="View all posts filed under Energy and vitality">Energy and vitality</a>
+</li>
+	<li class="cat-item cat-item-124"><a href="http://www.cenovis.com.au/products/fish-oils/" title="View all posts filed under Fish oils">Fish oils</a>
+</li>
+	<li class="cat-item cat-item-122"><a href="http://www.cenovis.com.au/products/heart-and-circulation/" title="View all posts filed under Heart health">Heart health</a>
+</li>
+	<li class="cat-item cat-item-120"><a href="http://www.cenovis.com.au/products/colds-immunity-hayfever/" title="View all posts filed under Immunity">Immunity</a>
+</li>
+	<li class="cat-item cat-item-119"><a href="http://www.cenovis.com.au/products/kids-health/" title="View all posts filed under Kid&#039;s health">Kid&#039;s health</a>
+</li>
+	<li class="cat-item cat-item-126"><a href="http://www.cenovis.com.au/products/mens-health/" title="View all posts filed under Men&#039;s health">Men&#039;s health</a>
+</li>
+	<li class="cat-item cat-item-123"><a href="http://www.cenovis.com.au/products/multivitamins/" title="View all posts filed under Multivitamin">Multivitamin</a>
+</li>
+	<li class="cat-item cat-item-121"><a href="http://www.cenovis.com.au/products/stress-and-sleep/" title="View all posts filed under Stress and sleep">Stress and sleep</a>
+</li>
+	<li class="cat-item cat-item-125"><a href="http://www.cenovis.com.au/products/womens-health/" title="View all posts filed under Women&#039;s health">Women&#039;s health</a>
+</li>
+ 
+							</ul>
+						</div><!-- .row -->
+					</li><!-- .submenu -->
+				</ul>
+
+				<ul class=" promotions">
+					<li class="drop-down">
+						<a href="#" class="nolink">Promotions</a>
+						<div class="current-page-indicator-off"></div>
+					</li>
+					<li class="submenu">		
+						<img class="arrow-up" src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/arrowUp.png">
+						<ul class="row">
+							<li>
+								<a target="_blank" href="https://www.facebook.com/CenovisAustralia/app_233573256783899">
+									<h2 class="kids">WIN A TRIP TO FIJI!</h2>
+									<div ><img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/menu-promo-facebook.jpg">
+								</a>
+							</li>
+							<li>
+								<a href="/win-the-goods">
+									<h2 class="multis">WIN THE GOODS</h2>
+									<img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/menu-promo-win.jpg">
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="/storybookapp/">
+									<h2 class="immunity">YUMMO ADVENTURES</h2>
+									<img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/appPol.gif">
+								</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+						<div class="btm-row">
+							<a target="_blank" href="https://www.facebook.com/CenovisAustralia">
+								<h2>
+										STAY IN TOUCH WITH FACEBOOK <img src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/fb_logo_72.png">
+								</h2>
+							</a>
+						</div><!-- .row -->
+					</li><!-- .submenu -->
+				</ul>		
+
+				<ul class="ask-a-naturopath">
+					<li class="drop-down">
+						<a href="/enquiry">Ask a Naturopath
+						<img class="arrow-up" src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/arrowUp.png">
+						</a>
+						<div class="current-page-indicator-off"></div>
+					</li>
+						
+				</ul>
+
+			</div>
+		</nav>
+<div id="mobileHome">
+	<a href="/products/kids-health"><img class="menuTile" src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/mobProductHeroKids.gif"></a>
+	<a href="/products/multivitamins"><img class="menuTile" src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/mobProductHeroMulti.gif"></a>
+	<a href="/products/colds-immunity-hayfever/"><img class="menuTile" src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/mobProductHeroImmunity.gif"></a>
+	<a href="/guide/"><img class="menuTile" src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/mobGSGTile.gif"></a>
+	<a href="/products/"><img class="menuTile" src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/images/mobProductCategories.gif"></a>
+		
+</div>
+
+<div class="content">
+		<article class="post" id="post-2473">
+
+		<div class="wrapper info">
+		<div class="entry">
+			<div id="info" class="win-the-goods">
+	 
+
+<div class="detail-page">
+
+<h1>vote and share</h1>
+
+
+
+<div class="fb-like" data-layout="button_count" data-href="http://www.cenovis.com.au/win-the-goods-entry/vote/115" data-send="true" data-width="450" data-show-faces="false"></div>
+
+
+<div class="entry-image-container">
+	
+		<div class="entry-image" style="background-image:url(/win-the-goods-entry/uploads/detail/85d9cc1c69b50a41d72e615cce512d3b.jpg)"></div>
+
+	 
+</div>
+
+<h2 class="our-club-heading">OUR CLUB:</h2>
+<h4>
+Ingle Farm Junior Soccer Club</h4>
+
+<div class="spread">
+	<h2>SPREAD THE WORD:</h2>
+	<p>
+		Share this URL: 		<a href="http://www.cenovis.com.au/win-the-goods-entry/vote/115">www.cenovis.com.au/win-the-goods-entry/vote/115</a>
+	</p>
+</div>
+
+<h2>WHAT WOULD WE BUY?</h2>
+<div class="entry-text">
+Inflatable Soccer Pitch
+Hand cart for taking nets/ balls/ equipment to the pitches on game day. (This would make the coaches job a whole lot easier!)</div>
+
+<h2>WHY SHOULD WE WIN?</h2>
+<div class="entry-text smaller-text">
+Our club has been a strong community member since 1971. We have nurtured many young community members many of whom have gone on to represent the state and our Country as valued soccer stars. (eg John Aloisi, Racheal Quigley &amp; brothers Dylan &amp; Ryan McGowan). We have members who have been with us for up to 30 years as players and now volunteer coaches &amp; committee members. We have started gaining a growing number of new members from very diverse backgrounds. Many are new to our country and are welcomed by the players and volunteers as part of the community and followers of this great international sport. The growing number of new citizens to our shores is seeing our numbers starting to rapidly grow. We recently attended an expo where we had a great deal of interest from many parents for their children to join our club as we have a friendly and family orientated reputation. Not just about winning but about having fun and being a part of the local community. We will be attending more local events at schools and locally run events in the near future and the presence of a bright inflatable soccer pitch would be a great way to introduce the young players and have some fun. The Clubs motto &#039; We do it for the kids&quot; was coined by one of the Club&#039;s favourite son&#039;s, the late Geoff Cardozo. We are very proud of this. Thank you &amp; here&#039;s to the future of the world game in South Australia!</div>
+
+
+<h2>VOTE FOR THEM:</h2>
+				
+<p>Please enter your email address to vote:</p>
+
+
+<form method="post" id="voteform" name="vote" action="http://www.cenovis.com.au/win-the-goods-entry/index.php/enter/detail"  >
+<input type="hidden" name="vote[id]" id="vote_id" /><input type="hidden" name="vote[entry_id]" value="115" id="vote_entry_id" /><label for="vote_email">Email</label>:  &nbsp; 
+<input class="email" type="text" name="vote[email]" id="vote_email" /><input type="submit" class="submit-button"  value="submit vote" /> 
+<br />
+<small>NOTE: you can only vote once per email address.</small>
+</form>
+
+<!--
+<a href="/win-the-goods-entry/index.php/entries"></a>
+-->
+</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=445745688845409";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+			</div>
+		</div>	
+		</div>
+
+		</article>		
+</div>		
+
+
+		<div class="clear"></div>
+		<footer id="footer">
+			<div id="footerConv">
+        <div id="close">
+                <span>X</span>
+        </div><!-- end close -->
+               <a href="https://www.facebook.com/CenovisAustralia/app_233573256783899" target="_blank">
+                <div id="convCopy">
+                        <p><span><b>Win a trip to Fiji!</b></span></p>
+                        <img src="/wp-content/themes/cenovis2013/images/promoPolaroids/fiji.png">
+                </div><!-- end convCopy -->
+        </a>
+
+        </div><!-- end footerConv -->
+			<div class="wrapper">
+			<img src="/wp-content/themes/cenovis2013/images/footer.gif">
+			<!--
+			<small>&copy;2013 Cenovis</small>
+			-->
+			</div>
+		</footer>
+			<div class="footer-text">
+			<div class="wrapper">
+								<p>© 2012 Sanofi-aventis Healthcare Pty Ltd trading as Sanofi Consumer Healthcare. A.C.N. 076 651 959<br>
+				Always read the label. Use only as directed. If symptoms persist, see your healthcare professional.<br>
+				Vitamin supplements should not replace a balanced diet.<br>
+				Cenovis is a trade mark of Sanofi-aventis Healthcare Pty Ltd trading as Sanofi Consumer Healthcare. A.C.N. 076 651 959.<br></p>
+				<div class="linkCont">
+					<a href="/privacy-policy/">Privacy Policy</a> | <a href="/legal-notice">Legal Notice</a> | <a href="/enquiry">Contact</a> | <a href="/about-us">About Us</a>
+				</div>
+				<div id="social">
+					<div id="socWrap">
+					<a target="_blank" href="https://www.facebook.com/CenovisAustralia">
+					<p>Like us on Facebook</p>
+					<img src="/wp-content/themes/cenovis2013/images/fb_logo_72.png">	
+					</a>
+					</div>				
+				</div>
+			</div>
+			
+			</div>
+
+	
+
+<!-- here comes the javascript -->
+
+<!-- jQuery is called via the WordPress-friendly way via functions.php -->
+
+<!-- this is where we put our custom functions -->
+<script src="http://www.cenovis.com.au/wp-content/themes/cenovis2013/_/js/functions.js"></script>
+
+<!-- Asynchronous google analytics; this is the official snippet.
+	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
+	 
+<script>
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+-->
+	
+</body>
+
+</html>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
